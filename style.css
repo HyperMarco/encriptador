@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    width: 100vw1;
+    height: 100vh;
+    background: #f3f5fc;
+}
+
+#logo {
+    position: absolute;
+    top: 31.09px;
+    left: 48px;
+    width: 31.09px;
+    height: 48px;
+}
+
+.texto{
+    position: absolute;
+    width: 40%;
+    height: 62%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
+
+.texto::placeholder{
+    color: #0a3971;
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.buttonencriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0a3871;
+    border-radius: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.buttondesencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.buttondesencriptar:hover, .buttonencriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.buttoncopiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+}
+
+.buttoncopiar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 124%;
+    text-align: center;
+    color: #343a40;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+footer {
+    background-color: #f3f5fc;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+/*para dispositivos*/
+
+@media screen and (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    #logo{
+        height: 48px;
+        width: 32px;
+        left: 16px;
+        top: 24px;
+        border-radius: 0px;
+        
+    }
+    .encriptar{
+        width: 100%;
+    }
+    .texto{
+        height: 48px;
+        width: 343px;
+        left: 16px;
+        top: 152px;
+        border-radius: nullpx;
+        
+    }
+    .terminos{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .terminos p{
+        height: 18px;
+        width: 205px;
+        left: 24px;
+        top: 0px;
+        border-radius: nullpx;        
+    }
+
+    #terminosicono{
+        visibility:visible
+    }
+
+    .botones{
+        height: 158px;
+        width: 343px;
+        left: 16px;
+        top: 485px;
+        border-radius: 0px;
+             
+    }
+    .buttonencriptar, .buttondesencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .buttonencriptar:hover, .buttondesencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .buttoncopiar{
+        visibility: hidden;
+    }
+
+    .encriptado{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .mensaje-encriptado{
+        width: 100;
+        top: 5%;
+    }
+
+    .encriptado p{
+        visibility: hidden;
+    }
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="logo icon" href="Images/Logo-alura.png" type="image/x-icon">   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Images/Logo-alura.png" alt="Logo-alura" id="logo">
+
+        <div class="encriptar">
+            <textarea name="texto" class="texto" cols="30" rows="10" id="texto" class="input-padron" placeholder="Ingresar texto aquí" oninput="limitarCaracteres()"></textarea>
+        </div>
+
+        <div class="terminos">
+            <img src="Images/Vector-terminos.png" alt="icono_terminos" id="terminosicono">
+            <p>Solo letras minúsculas, sin caracteres especiales y sin acentos. Límite de caracteres (180)</p>
+        </div>
+        <div class="botones">
+            <button class="buttonencriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="buttondesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        <div class="encriptado">
+            <img src="Images/muneco.png" alt="muneco_con_lupa" id="muneco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">¡Ningún mensaje fue encontrado!</h2>
+                <p id="parrafo">Ingresa el texto que quieres encriptar o desencriptar</p>
+                <button class="buttoncopiar" type="button" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Proyecto realizado por: Marco HDZ. PRADO.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
