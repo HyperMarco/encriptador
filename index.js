@@ -23,7 +23,7 @@ function encriptar() {
     document.getElementById("texto").value = textoCifrado;
     tituloMensaje.textContent = "Texto encriptado con éxito";
     parrafo.textContent = "";
-    muneco.src = "./Images/Encriptador.png";
+    muneco.src = "./Images/encriptador.png";
 }
 
 function desencriptar() {
